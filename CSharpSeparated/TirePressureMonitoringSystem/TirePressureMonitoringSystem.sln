@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TirePressureMonitoringSystem", "TirePressureMonitoringSystem.csproj", "{DF4596F5-0E20-4135-8E44-C0AF471A967C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{019E181E-34E6-417E-839E-1AD0617610E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF4596F5-0E20-4135-8E44-C0AF471A967C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF4596F5-0E20-4135-8E44-C0AF471A967C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF4596F5-0E20-4135-8E44-C0AF471A967C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF4596F5-0E20-4135-8E44-C0AF471A967C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{019E181E-34E6-417E-839E-1AD0617610E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{019E181E-34E6-417E-839E-1AD0617610E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{019E181E-34E6-417E-839E-1AD0617610E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{019E181E-34E6-417E-839E-1AD0617610E4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

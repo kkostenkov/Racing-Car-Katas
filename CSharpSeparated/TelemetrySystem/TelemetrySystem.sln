@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelemetrySystem", "TelemetrySystem.csproj", "{143B2C35-A159-499D-8347-041D8F0E68CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{D580BF5A-B440-4816-9363-ABB48D6B88CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{143B2C35-A159-499D-8347-041D8F0E68CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{143B2C35-A159-499D-8347-041D8F0E68CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{143B2C35-A159-499D-8347-041D8F0E68CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{143B2C35-A159-499D-8347-041D8F0E68CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D580BF5A-B440-4816-9363-ABB48D6B88CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D580BF5A-B440-4816-9363-ABB48D6B88CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D580BF5A-B440-4816-9363-ABB48D6B88CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D580BF5A-B440-4816-9363-ABB48D6B88CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
