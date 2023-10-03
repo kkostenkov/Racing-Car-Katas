@@ -11,7 +11,7 @@ namespace TDDMicroExercises.TelemetrySystem
 
         private readonly Random _connectionEventsSimulator = new Random(42);
 
-        public bool OnlineStatus
+        public virtual bool OnlineStatus
         {
             get { return _onlineStatus; }
         }
