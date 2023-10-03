@@ -6,13 +6,13 @@ namespace TDDMicroExercises.TirePressureMonitoringSystem
     public class AlarmTest
     {
         private Alarm alarm;
-        private Sensor fakeSensor;
+        private PredictableSensor predictableSensor;
 
         [SetUp]
         public void SetUp()
         {
             alarm = new Alarm();
-            fakeSensor = new Sensor();
+            predictableSensor = new PredictableSensor();
         }
         
         [Test]
@@ -20,13 +20,39 @@ namespace TDDMicroExercises.TirePressureMonitoringSystem
         {
             Assert.False(alarm.AlarmOn);
         }
-
-        [Test]
-        public void Foo()
+        
+        [TestCase(0, ExpectedResult = true)]
+        [TestCase(22, ExpectedResult = true)]
+        public bool Should_BeOn_When_PressureIsOfLimits(double inputPressure)
         {
-            alarm.GetType().GetField("_sensor", BindingFlags.Instance | BindingFlags.NonPublic).SetValue(alarm, fakeSensor);
-            alarm.Check();
-            Assert.False(alarm.AlarmOn);
+            alarm.Check(inputPressure);
+            return alarm.AlarmOn;
         }
+        
+        [TestCase(17, ExpectedResult = false)]
+        [TestCase(19, ExpectedResult = false)]
+        [TestCase(21, ExpectedResult = false)]
+        public bool Should_BeOff_When_PressureIsInLimits(double inputPressure)
+        {
+            alarm.Check(inputPressure);
+            return alarm.AlarmOn;
+        }
+
+        // [Test]
+        // public void Foo()
+        // {
+        //     alarm.GetType().GetField("_sensor", BindingFlags.Instance | BindingFlags.NonPublic)
+        //         .SetValue(alarm, predictableSensor);
+        //     alarm.Check();
+        //     Assert.False(alarm.AlarmOn);
+        // }
+    }
+
+    public class PredictableSensor : Sensor
+    {
+        // public override double PopNextPressurePsiValue()
+        // {
+        //     return 0;
+        // }
     }
 }
